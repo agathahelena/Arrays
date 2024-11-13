@@ -8,8 +8,8 @@
 
     //ENTRADA
     const n1 = Number(prompt(`informe um número`));
-    const n2 = Number(prompt(`informe um número`));
-    const n3 = Number(prompt(`informe um número`));
+    const n2 = Number(prompt(`informe outro número`));
+    const n3 = Number(prompt(`informe outro número`));
 
     //PROCESSAMENTO
     let  Arrayvazio = [] ;
@@ -17,26 +17,24 @@
     if (n1 > n2 && n2 > n3 ) {
         Arrayvazio = [n1, n2 , n3];
     }
+    if (n1 > n3 && n3 > n2 ) {
+        Arrayvazio = [n1 , n3 , n2 ];
+    }
     if (n2 > n1 && n1 > n3) {
         Arrayvazio = [n2 , n1 ,n3];
     }
-   
-    
-    
-    /*{
-        if(n2 > n3){
-            Arrayvazio = [n1, n2 , n3];
-        }
-        if (n2 < n3 ){
-            Arrayvazio = [ n1,n3,n2];
-        }
+    if (n2 > n3 && n3 > n1 ) {
+        Arrayvazio = [n2 , n3 , n1 ];
     }
-    if (n2 > n1){
-
-
-    } */
+    if(n3 > n2 && n2 > n1 ) {
+        Arrayvazio = [n3 , n2 , n1 ];
+    } 
+    if (n3 > n1 && n1 > n2 ) {
+        Arrayvazio = [n3 , n1 , n2 ];
+    }
     
-
     //SAÍDA
+
+    document.write (`A ordem dos números em forma decresente é ${Arrayvazio}`);
 
 </script>
