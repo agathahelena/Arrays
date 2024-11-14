@@ -9,11 +9,14 @@
     */
 
     //ENTRADA
-
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    const adiciona = prompt(`qual carro você deseja adicionar a lista : \n-${carrosSUV.join("\n -")}`);
 
     //PROCESSAMENTO
-
+    carrosSUV.push(adiciona);
+    const antiga = ("Tiggo, Sportage, Tucson, EcoSport");
 
     //SAÍDA
+    document.write(`sua lista original era : ${antiga} <br> Sua lista atual é ${carrosSUV}`);
 
 </script>

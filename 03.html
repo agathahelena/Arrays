@@ -12,18 +12,21 @@
 
     //ENTRADA
 
-    const frutas1 = prompt(`lista de frutas. Informe uma fruta`);
-    const frutas2 = prompt(`lista de frutas. Informe uma fruta`);
-    const frutas3 = prompt(`lista de frutas. Informe uma fruta`);
+    const fru1 = prompt(`lista de frutas. Informe uma fruta`);
+    const fru2 = prompt(`lista de frutas. Informe uma fruta`);
+    const fru3 = prompt(`lista de frutas. Informe uma fruta`);
+
     const bebidas1 = prompt(`lista de bebidas. informe uma bebida`);
     const bebidas2 = prompt(`lista de bebidas. informe uma bebida`);
     const bebidas3 = prompt(`lista de bebidas. informe uma bebida`);
     
     //PROCESSAMENTO
-
-    listaCompras.join(" - ");
-
+    
+    const listaFruta = [fru1 , fru2 , fru3];
+    const listaBebi = [bebidas1 , bebidas2 , bebidas3 ];
+    const listaCompleta = [fru1 , fru2 , fru3 , bebidas1 , bebidas2 , bebidas3 ];
 
     //SAÍDA
+    document.write(`Sua lista de frutas é ${listaFruta.join(" - ")} <br> Sua lista de bebidas é ${listaBebi.join(" - ")} <br> Sua lista completa é ${listaCompleta.join(" - ")}`);
 
 </script>
