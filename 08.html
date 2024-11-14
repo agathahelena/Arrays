@@ -9,10 +9,19 @@
     */
 
     //ENTRADA
+    const palavra = prompt(`digite UMA palavra :`);
+    const letra = prompt(`qual letra você deseja encontrar na palavra que acabou de digitar `);
 
 
     //PROCESSAMENTO
 
+ posicao = palavra.indexOf(letra);
+
+if (posicao !== -1) {
+    document.write(`A letra ${letra} foi encontrada na palavra e está na posição ${posicao + 1} (considerando a contagem começando em 1).`);
+} else {
+    document.write(`A letra ${letra} não foi encontrada na palavra.`);
+}
 
     //SAÍDA
 

@@ -13,9 +13,20 @@
     */
 
     //ENTRADA
+    const nomeCores = ["azul", "amarelo", "verde", "branco", "preto", "marrom", "cinza"];
+    const cor = prompt(`informe uma cor da lista : amarelo, verde, branco, preto, marrom, cinza`)
 
 
     //PROCESSAMENTO
+
+    numeroAleatorio = Math.floor(Math.random() * 7);
+
+    if(cor === nomeCores[numeroAleatorio]) {
+    document.write (`PARABÉNS! VOCÊ ESTÁ COM SORTE NA COR ${cor}!`);
+    } 
+    else {
+    document.write(`NÃO FOI DESSA VEZ... TENTE NOVAMENTE!`);
+   }
 
 
     //SAÍDA
